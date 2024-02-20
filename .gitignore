@@ -1,3 +1,9 @@
+# Build files
+/target
+
+# Idea folders
+/.idea
+
 # Prerequisites
 *.d
 
