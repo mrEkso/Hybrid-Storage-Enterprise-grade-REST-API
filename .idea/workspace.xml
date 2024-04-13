@@ -5,54 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ee0800b-f4c6-4865-afc5-45e0e5f86718" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Phase1/.docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/Phase1Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/config/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/config/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/controllers/AuthorizationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/handlers/AuthExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/handlers/MethodArgumentNotValidExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/models/ErrorDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/models/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/models/ValidationErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/lang/LocalizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/BaseAuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/BaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/auth/LoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/auth/LogoutResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/auth/RegisterResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/security/JwtAuthEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/security/jwt/JwtTokenProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/services/User/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/services/User/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/services/modelMappable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/resources/messages_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/main/resources/messages_uk.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/test/java/com/example/phase1/IntegrationTests/AuthorizationIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/test/java/com/example/phase1/IntegrationTests/AuthorizationIntegrationTestUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/test/java/com/example/phase1/UnitTests/AuthorizationUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/test/java/com/example/phase1/UnitTests/AuthorizationUnitTestUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/test/resources/application-test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/test/resources/messages_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Phase1/src/test/resources/messages_uk.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Phase1/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +43,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
   </component>
