@@ -1,0 +1,30 @@
+version: "3.1"
+services:
+  ### mongodb ####################################################
+  mongodb:
+    image: mongo
+    container_name: ${DOCKER_PROJECT_NAME}-mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${DB_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${DB_PASSWORD}
+    ports:
+      - ${DB_DOCKER_PORT}:${DB_PORT}
+    networks:
+      - localnet
+  ### spring ###################################################
+  spring-boot-app:
+    container_name: ${DOCKER_PROJECT_NAME}-spring-boot-app
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    ports:
+      - ${SPRING_DOCKER_PORT}:${SPRING_PORT}
+    depends_on:
+      - mongodb
+    environment:
+      DB_URL: ${DB_URL}
+    networks:
+      - localnet
+networks:
+  localnet:
+    driver: bridge
