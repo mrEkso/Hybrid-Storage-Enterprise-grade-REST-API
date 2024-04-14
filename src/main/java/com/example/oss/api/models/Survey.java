@@ -7,18 +7,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.Instant;
 import java.util.UUID;
 
-@Entity
+@Document(collection = "surveys")
 @Getter
 @NoArgsConstructor
-@Table(name = "surveys")
 public class Survey {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private final UUID id = UUID.randomUUID();
 
     @Setter
     @ManyToOne()

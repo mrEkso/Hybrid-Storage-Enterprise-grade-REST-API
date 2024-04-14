@@ -4,36 +4,36 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.UUID;
 
-@Entity
+@Document(collection = "votes")
 @Getter
 @NoArgsConstructor
-@Table(name = "votes", uniqueConstraints = {
-        @UniqueConstraint(columnNames = {
-                "user_id",
-                "survey_id"
-        })
-})
 public class Vote {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private final UUID id = UUID.randomUUID();
 
     @NotNull
-    @ManyToOne()
-    @JoinColumn(name = "user_id", nullable = false)
+    @DBRef
+    @Field("user_id")
+    @Indexed
     private User user;
 
     @NotNull
-    @ManyToOne(cascade = CascadeType.REMOVE)
-    @JoinColumn(name = "survey_id", nullable = false)
+    @DBRef
+    @Field("survey_id")
+    @Indexed
     private Survey survey;
 
     @NotNull
-    @ManyToOne()
-    @JoinColumn(name = "survey_option_id", nullable = false)
+    @DBRef
+    @Field("survey_option_id")
+    @Indexed
     private SurveyOption surveyOption;
 
     public Vote(User user, Survey survey, SurveyOption surveyOption) {
