@@ -5,55 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ee0800b-f4c6-4865-afc5-45e0e5f86718" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data-in-cloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data-in-cloud.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_smallrye_jandex_3_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_angus_angus_activation_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_4_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_4_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_4_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_6_0_6_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_4_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_6_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_6_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/.docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/Phase1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/config/AppConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/controllers/AuthorizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/controllers/AuthorizationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/handlers/AuthExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/exceptions/handlers/AuthExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/handlers/MethodArgumentNotValidExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/exceptions/handlers/MethodArgumentNotValidExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/models/ErrorDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/exceptions/models/ErrorDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/models/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/exceptions/models/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/models/ValidationErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/exceptions/models/ValidationErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/lang/LocalizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/lang/LocalizationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/BaseAuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/BaseAuthResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/BaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/BaseResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/auth/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/auth/LoginResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/auth/LogoutResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/auth/LogoutResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/auth/RegisterResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/auth/RegisterResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/security/JwtAuthEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/security/JwtAuthEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/security/jwt/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/security/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/security/jwt/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/services/User/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/User/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/services/User/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/User/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/services/modelMappable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/modelMappable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/main/resources/messages_uk.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_uk.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/test/java/com/example/phase1/IntegrationTests/AuthorizationIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/IntegrationTests/AuthorizationIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/test/java/com/example/phase1/IntegrationTests/AuthorizationIntegrationTestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/IntegrationTests/AuthorizationIntegrationTestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/test/java/com/example/phase1/UnitTests/AuthorizationUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/UnitTests/AuthorizationUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/test/java/com/example/phase1/UnitTests/AuthorizationUnitTestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/UnitTests/AuthorizationUnitTestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/test/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/messages_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/src/test/resources/messages_uk.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/messages_uk.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/Survey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/Survey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/SurveyOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/SurveyOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/Vote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/ApplicantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/ApplicantRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/SurveyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/SurveyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/VoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/VoteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +91,14 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2cMTCCbO6oqGa9BwhstIYrPoVYM" />
   <component name="ProjectLevelVcsManager">

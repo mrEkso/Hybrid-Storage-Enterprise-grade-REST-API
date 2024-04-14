@@ -9,6 +9,8 @@ import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -17,26 +19,21 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.UUID;
 
-
-@Entity
+@Document(collection = "users")
 @Getter
 @NoArgsConstructor
-@Table(name = "users", uniqueConstraints = {
-        @UniqueConstraint(columnNames = {
-                "email"
-        })
-})
 public class User implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private UUID id = UUID.randomUUID();
 
     @NotBlank(message = "Адрес електронної пошти не може бути пустим")
-    @Size(max = 100)
+    @Size(min = 4, max = 100)
     @Email
+    @Indexed(unique = true)
     private String email;
 
     @NotBlank(message = "Пароль не може бути пустим")
+    @Size(min = 6, max = 30)
     @Setter
     private String password;
 
