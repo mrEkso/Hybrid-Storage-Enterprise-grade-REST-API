@@ -32,11 +32,12 @@ public class User implements UserDetails {
     private UUID id;
 
     @NotBlank(message = "Адрес електронної пошти не може бути пустим")
-    @Size(max = 100)
+    @Size(min = 4, max = 100)
     @Email
     private String email;
 
     @NotBlank(message = "Пароль не може бути пустим")
+    @Size(min = 6, max = 30)
     @Setter
     private String password;
 
