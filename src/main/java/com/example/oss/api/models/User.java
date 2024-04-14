@@ -9,9 +9,9 @@ import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.SoftDelete;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDate;
@@ -19,25 +19,17 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.UUID;
 
-
-@Entity
+@Document(collection = "users")
 @Getter
 @NoArgsConstructor
-@SoftDelete
-@Table(name = "users", uniqueConstraints = {
-        @UniqueConstraint(columnNames = {
-                "email", "deleted"
-        })
-})
 public class User implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    @Setter
-    private UUID id;
+    private UUID id = UUID.randomUUID();
 
     @NotBlank(message = "Адрес електронної пошти не може бути пустим")
     @Size(min = 4, max = 100)
     @Email
+    @Indexed(unique = true)
     private String email;
 
     @NotBlank(message = "Пароль не може бути пустим")
@@ -51,10 +43,6 @@ public class User implements UserDetails {
 
     @Past(message = "День народження повинен бути в минулому")
     private LocalDate birthdate;
-
-    public static final int ROLE_ADMIN = 1;
-    public static final int ROLE_USER = 2;
-    private int role = ROLE_USER;
 
     public User(UUID id, String email, String password, String token, LocalDate birthdate) {
         this.id = id;
@@ -77,21 +65,14 @@ public class User implements UserDetails {
         this.birthdate = birthdate;
     }
 
-    public User(String email, String password, int role) {
-        this.email = email;
-        this.password = password;
-        this.role = role;
-    }
-
     public User(String email, String password) {
         this.email = email;
         this.password = password;
     }
 
     @Override
-    @JsonIgnore
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + (role == ROLE_ADMIN ? "ADMIN" : "USER")));
+        return Collections.emptyList();
     }
 
     @Override
