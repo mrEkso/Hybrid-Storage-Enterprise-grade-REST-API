@@ -5,16 +5,16 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.UUID;
 
-@Entity
+@Document(collection = "survey_options")
 @Getter
 @NoArgsConstructor
 public class SurveyOption {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private final UUID id = UUID.randomUUID();
 
     @NotNull
     @ManyToOne(cascade = CascadeType.REMOVE,
