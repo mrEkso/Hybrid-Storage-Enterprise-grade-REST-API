@@ -6,7 +6,54 @@
   <component name="ChangeListManager">
     <list default="true" id="5ee0800b-f4c6-4865-afc5-45e0e5f86718" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phase1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Phase1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data-in-cloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data-in-cloud.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/.docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/Phase1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/config/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/controllers/AuthorizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/controllers/AuthorizationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/handlers/AuthExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/exceptions/handlers/AuthExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/handlers/MethodArgumentNotValidExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/exceptions/handlers/MethodArgumentNotValidExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/models/ErrorDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/exceptions/models/ErrorDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/models/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/exceptions/models/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/exceptions/models/ValidationErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/exceptions/models/ValidationErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/lang/LocalizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/lang/LocalizationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/BaseAuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/BaseAuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/BaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/BaseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/auth/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/auth/LoginResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/auth/LogoutResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/auth/LogoutResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/responses/auth/RegisterResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/auth/RegisterResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/security/JwtAuthEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/security/JwtAuthEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/security/jwt/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/security/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/security/jwt/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/services/User/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/User/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/services/User/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/User/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/services/modelMappable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/modelMappable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/main/resources/messages_uk.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_uk.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/test/java/com/example/phase1/IntegrationTests/AuthorizationIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/IntegrationTests/AuthorizationIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/test/java/com/example/phase1/IntegrationTests/AuthorizationIntegrationTestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/IntegrationTests/AuthorizationIntegrationTestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/test/java/com/example/phase1/UnitTests/AuthorizationUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/UnitTests/AuthorizationUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/test/java/com/example/phase1/UnitTests/AuthorizationUnitTestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/UnitTests/AuthorizationUnitTestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/test/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/messages_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phase1/src/test/resources/messages_uk.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/messages_uk.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +73,18 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -43,7 +98,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -60,7 +115,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;mongo" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -68,8 +123,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore.preview.features.used" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="21" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Phase1/src/test/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -78,11 +134,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\src\main\java\com\example\oss\api\responses" />
+      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\src\main\java\com\example\phase1\api\services" />
+      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\src\main\java\com\example\phase1\api\responses" />
+      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\src\main\java\com\example\phase1\api\repository" />
       <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\Phase1\src\test\resources" />
-      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\Phase1\src\main\java\com\example\phase1\api" />
-      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\Phase1\src\main\resources" />
-      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\Phase1\src\test" />
-      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\Phase1\src\main\java\com\example\phase1\api\services" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Main\IdeaProjects\data-in-cloud" />
@@ -92,14 +148,21 @@
       <recent name="com.example.phase1" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.phase1.IntegrationTests" />
-      <recent name="com.example.phase1.UnitTests" />
-      <recent name="com.example.phase1" />
-      <recent name="com.example.phase1.api.config" />
-      <recent name="com.example.phase1.api.lang" />
+      <recent name="com.example.oss.api.controllers" />
+      <recent name="com.example.phase1.api.repository.factory" />
+      <recent name="com.example.phase1.api.models" />
+      <recent name="com.example.phase1.api.controllers" />
+      <recent name="com.example.phase1.api.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Phase1 (1)">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Phase1Application">
     <configuration name="All in Phase1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Phase1" />
       <option name="PACKAGE_NAME" value="" />
@@ -120,32 +183,26 @@
       <module name="Phase1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.phase1.UnitTests.*" />
+          <option name="PATTERN" value="com.example.oss.UnitTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.phase1.UnitTests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.phase1.UnitTests.AuthorizationUnitTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.oss.UnitTests.AuthorizationUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="Phase1Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="data-in-cloud" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="data-in-cloud" />
-      <option name="filePath" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.oss.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Phase1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Phase1" />
+      <module name="data-in-cloud" />
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -156,7 +213,7 @@
           <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
         </ENTRIES>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.phase1.Phase1Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.oss.Application" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndTriggerFile" />
@@ -169,6 +226,7 @@
       <item itemvalue="JUnit.AuthorizationUnitTest" />
       <item itemvalue="JUnit.All in Phase1 (1)" />
       <item itemvalue="Spring Boot.Phase1Application" />
+      <item itemvalue="Spring Boot.Phase1Application (1)" />
     </list>
     <recent_temporary>
       <list>
@@ -196,6 +254,8 @@
       <workItem from="1708287057465" duration="5569000" />
       <workItem from="1708347166275" duration="2139000" />
       <workItem from="1708438805814" duration="721000" />
+      <workItem from="1713041327884" duration="1405000" />
+      <workItem from="1713101515520" duration="46000" />
     </task>
     <servers />
   </component>
@@ -217,12 +277,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/security/jwt/JwtTokenProvider.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/oss/api/security/jwt/JwtTokenProvider.java</url>
           <line>27</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Phase1/src/main/java/com/example/phase1/api/controllers/AuthorizationController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/oss/api/controllers/AuthorizationController.java</url>
           <line>38</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
