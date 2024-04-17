@@ -1,12 +1,12 @@
 package com.example.oss.api.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.*;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -20,7 +20,7 @@ import java.util.Collections;
 import java.util.UUID;
 
 @Document(collection = "users")
-@Getter
+@Data
 @NoArgsConstructor
 public class User implements UserDetails {
     @Id

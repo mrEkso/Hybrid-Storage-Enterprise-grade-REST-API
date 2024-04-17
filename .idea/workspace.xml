@@ -5,42 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ee0800b-f4c6-4865-afc5-45e0e5f86718" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Post/PostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data-in-cloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data-in-cloud.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_smallrye_jandex_3_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_angus_angus_activation_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_4_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_4_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_4_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_6_0_6_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_4_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_6_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_6_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_2_2_224.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/Survey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/Survey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/SurveyOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/SurveyOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/controllers/AuthorizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/controllers/AuthorizationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/controllers/SurveyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/controllers/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/controllers/VoteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/dto/SurveyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/dto/PostDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/Survey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/SurveyOption.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/Vote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/ApplicantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/ApplicantRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/SurveyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/SurveyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/VoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/VoteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/Vote.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/ApplicantRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/SurveyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/VoteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/factory/FactoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/factory/FactoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/factory/FactoryRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/factory/FactoryRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/BaseAuthResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/BaseResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/BaseResponseWithData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/auth/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/auth/LogoutResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/auth/RegisterResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/crud/CreateResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/crud/DeleteResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses/crud/UpdateResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Applicant/ApplicantService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Applicant/ApplicantServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Survey/SurveyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Survey/SurveyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Post/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Vote/VoteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Vote/VoteServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_uk.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_uk.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/oss/IntegrationTests/AuthorizationIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/IntegrationTests/Autorization/AuthorizationIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/oss/IntegrationTests/AuthorizationIntegrationTestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/IntegrationTests/Autorization/AuthorizationIntegrationTestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/oss/UnitTests/AuthorizationUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/UnitTests/Autorization/AuthorizationUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/oss/UnitTests/AuthorizationUnitTestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/UnitTests/Autorization/AuthorizationUnitTestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/messages_uk.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +127,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.preview.features.used" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="21" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/example/oss/api/responses" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/example/oss/UnitTests/Posts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -129,11 +136,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\src\test\java\com\example\oss\UnitTests\Posts" />
+      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\src\test\resources" />
+      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\src\main\resources" />
+      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\src\test\java\com\example\oss\IntegrationTests\Posts" />
       <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\src\main\java\com\example\oss\api\responses" />
-      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\src\main\java\com\example\phase1\api\services" />
-      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\src\main\java\com\example\phase1\api\responses" />
-      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\src\main\java\com\example\phase1\api\repository" />
-      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\Phase1\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Main\IdeaProjects\data-in-cloud" />
@@ -143,11 +150,11 @@
       <recent name="com.example.phase1" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.oss.api.responses.factory" />
       <recent name="com.example.oss.api.controllers" />
       <recent name="com.example.phase1.api.repository.factory" />
       <recent name="com.example.phase1.api.models" />
       <recent name="com.example.phase1.api.controllers" />
-      <recent name="com.example.phase1.api.dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -157,34 +164,71 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Phase1Application">
-    <configuration name="All in Phase1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Phase1" />
+  <component name="RunManager" selected="JUnit.All in data-in-cloud">
+    <configuration name="All in data-in-cloud" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-in-cloud" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in Phase1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Phase1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+    <configuration name="PostUnitTest.deletePost_WhenPostExistsAndUserIsOwner_ShouldReturnOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-in-cloud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.oss.UnitTests.Posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.oss.UnitTests.Posts" />
+      <option name="MAIN_CLASS_NAME" value="com.example.oss.UnitTests.Posts.PostUnitTest" />
+      <option name="METHOD_NAME" value="deletePost_WhenPostExistsAndUserIsOwner_ShouldReturnOk" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthorizationUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Phase1" />
+    <configuration name="PostUnitTest.getMyPosts_WhenPostsDoesNotExist_ShouldReturnOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-in-cloud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.oss.UnitTests.Posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.oss.UnitTests.Posts" />
+      <option name="MAIN_CLASS_NAME" value="com.example.oss.UnitTests.Posts.PostUnitTest" />
+      <option name="METHOD_NAME" value="getMyPosts_WhenPostsDoesNotExist_ShouldReturnOk" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example.oss.UnitTests in data-in-cloud" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-in-cloud" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.oss.UnitTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.phase1.UnitTests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.oss.UnitTests.AuthorizationUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.example.oss.UnitTests" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example.oss.UnitTests.Posts in data-in-cloud" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data-in-cloud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.oss.UnitTests.Posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.oss.UnitTests.Posts" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -217,17 +261,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in Phase1" />
-      <item itemvalue="JUnit.AuthorizationUnitTest" />
-      <item itemvalue="JUnit.All in Phase1 (1)" />
+      <item itemvalue="JUnit.com.example.oss.UnitTests in data-in-cloud" />
+      <item itemvalue="JUnit.PostUnitTest.deletePost_WhenPostExistsAndUserIsOwner_ShouldReturnOk" />
+      <item itemvalue="JUnit.com.example.oss.UnitTests.Posts in data-in-cloud" />
+      <item itemvalue="JUnit.PostUnitTest.getMyPosts_WhenPostsDoesNotExist_ShouldReturnOk" />
       <item itemvalue="Spring Boot.Phase1Application" />
       <item itemvalue="Spring Boot.Phase1Application (1)" />
+      <item itemvalue="JUnit.All in data-in-cloud" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in Phase1 (1)" />
-        <item itemvalue="JUnit.AuthorizationUnitTest" />
-        <item itemvalue="JUnit.All in Phase1" />
+        <item itemvalue="JUnit.All in data-in-cloud" />
+        <item itemvalue="JUnit.com.example.oss.UnitTests.Posts in data-in-cloud" />
+        <item itemvalue="JUnit.PostUnitTest.getMyPosts_WhenPostsDoesNotExist_ShouldReturnOk" />
+        <item itemvalue="JUnit.com.example.oss.UnitTests in data-in-cloud" />
+        <item itemvalue="JUnit.PostUnitTest.deletePost_WhenPostExistsAndUserIsOwner_ShouldReturnOk" />
       </list>
     </recent_temporary>
   </component>
@@ -251,6 +299,13 @@
       <workItem from="1708438805814" duration="721000" />
       <workItem from="1713041327884" duration="1405000" />
       <workItem from="1713101515520" duration="46000" />
+      <workItem from="1713189648369" duration="8875000" />
+      <workItem from="1713257796387" duration="9318000" />
+      <workItem from="1713277210431" duration="7908000" />
+      <workItem from="1713288971849" duration="8619000" />
+      <workItem from="1713359496822" duration="2806000" />
+      <workItem from="1713366889796" duration="4709000" />
+      <workItem from="1713376392826" duration="734000" />
     </task>
     <servers />
   </component>
@@ -267,22 +322,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/oss/api/security/jwt/JwtTokenProvider.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/oss/api/controllers/AuthorizationController.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/data_in_cloud$AuthorizationUnitTest.ic" NAME="AuthorizationUnitTest Coverage Results" MODIFIED="1708290338431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
