@@ -37,7 +37,7 @@ class AuthorizationUnitTest {
     }
 
     @Test
-    void register_WhenUserDoesNotExist_ShouldReturnOk() throws Exception {
+    void register_WhenUserDoesNotExist_ShouldReturnIsCreated() throws Exception {
         given(userService.save(any())).willReturn(createTestDBUser());
         mockMvc.perform(registerUser(createTestUser())).andExpect(status().isCreated());
     }

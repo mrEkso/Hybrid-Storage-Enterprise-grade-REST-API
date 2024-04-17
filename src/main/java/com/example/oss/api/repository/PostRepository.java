@@ -1,17 +1,16 @@
 package com.example.oss.api.repository;
 
-import com.example.oss.api.models.Survey;
+import com.example.oss.api.models.Post;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import java.util.List;
 import java.util.UUID;
 
 @org.springframework.stereotype.Repository
-public interface SurveyRepository extends MongoRepository<Survey, UUID> {
+public interface PostRepository extends MongoRepository<Post, UUID> {
 
-    List<Survey> findByUserId(UUID user_id);
+    Page<Post> findByUserId(Pageable pageable, UUID userId);
 
-    Page<Survey> findByTitle(Pageable pageable, String title);
+    Page<Post> findByTitle(Pageable pageable, String title);
 }

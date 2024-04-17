@@ -51,13 +51,13 @@ public class AuthorizationIntegrationTestUtils {
                 .andExpect(resultMatcher);
     }
 
-    public String getTokenFromAuthorization(User user) throws Exception {
+    public String registerAndGetToken(User user) throws Exception {
         return JsonPath.parse(registerUser(user, status().isCreated())
                         .getResponse().getContentAsString())
                 .read("$.token");
     }
 
     public User createTestUser() {
-        return new User("test@test.com", "testtest");
+        return new User("test@test.com", "testuser");
     }
 }

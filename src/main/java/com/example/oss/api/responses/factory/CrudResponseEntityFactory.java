@@ -1,7 +1,5 @@
 package com.example.oss.api.responses.factory;
 
-
-
 import com.example.oss.api.responses.models.crud.CreateResponse;
 import com.example.oss.api.responses.models.crud.DeleteResponse;
 import com.example.oss.api.responses.models.crud.UpdateResponse;

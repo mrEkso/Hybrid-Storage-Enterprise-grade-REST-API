@@ -11,11 +11,11 @@ import java.util.UUID;
 @Getter
 @Setter
 @NoArgsConstructor
-public class SurveyDto {
+public class PostDto {
     private UUID id;
     private UserDto user;
     private String title;
     private String subtitle;
-    private Instant createdAt;
+    private Instant updatedAt;
     private boolean open;
 }

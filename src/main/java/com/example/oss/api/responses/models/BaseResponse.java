@@ -4,7 +4,6 @@ import lombok.Getter;
 
 import static com.example.oss.api.lang.LocalizationService.toLocale;
 
-
 @Getter
 public abstract class BaseResponse {
     private final int status;

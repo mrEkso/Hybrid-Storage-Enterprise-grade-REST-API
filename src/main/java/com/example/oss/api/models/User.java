@@ -1,17 +1,18 @@
 package com.example.oss.api.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.*;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDate;
@@ -20,7 +21,7 @@ import java.util.Collections;
 import java.util.UUID;
 
 @Document(collection = "users")
-@Getter
+@Data
 @NoArgsConstructor
 public class User implements UserDetails {
     @Id
@@ -44,6 +45,10 @@ public class User implements UserDetails {
     @Past(message = "День народження повинен бути в минулому")
     private LocalDate birthdate;
 
+    public static final int ROLE_ADMIN = 1;
+    public static final int ROLE_USER = 2;
+    private int role = ROLE_USER;
+
     public User(UUID id, String email, String password, String token, LocalDate birthdate) {
         this.id = id;
         this.email = email;
@@ -65,14 +70,21 @@ public class User implements UserDetails {
         this.birthdate = birthdate;
     }
 
+    public User(String email, String password, int role) {
+        this.email = email;
+        this.password = password;
+        this.role = role;
+    }
+
     public User(String email, String password) {
         this.email = email;
         this.password = password;
     }
 
     @Override
+    @JsonIgnore
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.emptyList();
+        return Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + (role == ROLE_ADMIN ? "ADMIN" : "USER")));
     }
 
     @Override
