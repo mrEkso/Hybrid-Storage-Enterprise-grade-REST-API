@@ -27,7 +27,7 @@ public class AuthorizationUnitTestUtils {
     }
 
     public static User createTestDBUser() {
-        return new User(UUID.randomUUID(), "test@test.com", "testtest",
+        return new User(UUID.randomUUID(), "test@test.com", "testuser",
                 "token", LocalDate.now());
     }
 }

@@ -1,30 +1,19 @@
 package com.example.oss.api.repository.factory;
 
-import com.example.oss.api.repository.ApplicantRepository;
-import com.example.oss.api.repository.SurveyRepository;
+import com.example.oss.api.repository.PostRepository;
 import com.example.oss.api.repository.UserRepository;
-import com.example.oss.api.repository.VoteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class FactoryRepositoryImpl implements FactoryRepository {
-    ApplicantRepository applicantRepository;
     UserRepository userRepository;
-    VoteRepository voteRepository;
-    SurveyRepository surveyRepository;
+    PostRepository postRepository;
 
     @Autowired
-    public FactoryRepositoryImpl(ApplicantRepository applicantRepository, UserRepository userRepository, VoteRepository voteRepository, SurveyRepository surveyRepository) {
-        this.applicantRepository = applicantRepository;
+    public FactoryRepositoryImpl(UserRepository userRepository, PostRepository postRepository) {
         this.userRepository = userRepository;
-        this.voteRepository = voteRepository;
-        this.surveyRepository = surveyRepository;
-    }
-
-    @Override
-    public ApplicantRepository getApplicantRepository() {
-        return applicantRepository;
+        this.postRepository = postRepository;
     }
 
     @Override
@@ -33,12 +22,7 @@ public class FactoryRepositoryImpl implements FactoryRepository {
     }
 
     @Override
-    public VoteRepository getVoteRepository() {
-        return voteRepository;
-    }
-
-    @Override
-    public SurveyRepository getSurveyRepository() {
-        return surveyRepository;
+    public PostRepository getPostRepository() {
+        return postRepository;
     }
 }
