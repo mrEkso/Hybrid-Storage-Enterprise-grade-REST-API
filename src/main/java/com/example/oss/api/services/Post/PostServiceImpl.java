@@ -4,6 +4,7 @@ import com.example.oss.api.dto.PostDto;
 import com.example.oss.api.models.Post;
 import com.example.oss.api.models.User;
 import com.example.oss.api.repository.factory.FactoryRepository;
+import com.example.oss.api.services.Blob.BlobStorageService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
@@ -20,11 +21,19 @@ public class PostServiceImpl implements PostService {
     private final int PAGE_SIZE = 3;
 
     private final FactoryRepository fr;
+    private final BlobStorageService blobStorageService;
     private final ModelMapper modelMapper;
 
     @Override
     public Optional<Post> findById(UUID id) {
         return fr.getPostRepository().findById(id);
+    }
+
+    @Override
+    public Optional<Post> findByIdAndUserId(UUID id, UUID userId) {
+        if (blobStorageService.checkBlobExists(getBlobNameFromIdAndUserId(id, userId)))
+            return fr.getPostRepository().findByIdAndUserId(id, userId);
+        return Optional.empty();
     }
 
     @Override
@@ -36,7 +45,7 @@ public class PostServiceImpl implements PostService {
     @Override
     public Page<Post> findAll(String searchText, int page) {
         Pageable pageable = PageRequest.of(page, PAGE_SIZE);
-        if (searchText == null || searchText.equals(""))
+        if (searchText == null || searchText.isEmpty())
             return fr.getPostRepository().findAll(pageable);
         return fr.getPostRepository().findByTitle(pageable, searchText);
     }
@@ -44,21 +53,32 @@ public class PostServiceImpl implements PostService {
     @Override
     public Post insert(Post post, User user) {
         post.setUserId(user.getId());
+        blobStorageService.uploadBlob(getBlobNameFromModel(post));
         return fr.getPostRepository().save(post);
     }
 
     @Override
-    public Post update(Post post) {
+    public Post update(Post post, User user) {
+        post.setUserId(user.getId());
         return fr.getPostRepository().save(post);
     }
 
     @Override
     public void delete(Post post) {
+        blobStorageService.deleteBlob(getBlobNameFromModel(post));
         fr.getPostRepository().delete(post);
     }
 
     @Override
     public PostDto convertToDto(Post post) {
         return modelMapper.map(post, PostDto.class);
+    }
+
+    private String getBlobNameFromModel(Post post) {
+        return getBlobNameFromIdAndUserId(post.getId(), post.getUserId());
+    }
+
+    private String getBlobNameFromIdAndUserId(UUID id, UUID userId) {
+        return id + "_" + userId;
     }
 }

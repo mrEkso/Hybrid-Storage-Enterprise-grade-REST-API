@@ -15,7 +15,7 @@ RUN mvn clean package -DskipTests
 # Run the app in a minimal java container
 
 # Create a new image for running the application
-FROM openjdk:17-jdk
+FROM openjdk:22-slim
 
 # Set the working directory
 WORKDIR /app

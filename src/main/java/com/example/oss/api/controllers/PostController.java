@@ -45,18 +45,15 @@ public class PostController {
     protected ResponseEntity<?> update(@PathVariable UUID id,
                                        @Valid @RequestBody Post post,
                                        @AuthenticationPrincipal User user) {
-        Post dbPost = findPostById(id);
-        checkOwnership(dbPost, user);
-        post.setId(id);
-        return updateResponse(postService.convertToDto(postService.update(post)));
+        checkOwnership(id, user);
+        return updateResponse(postService.convertToDto(postService.update(post, user)));
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> destroy(@PathVariable UUID id,
                                      @AuthenticationPrincipal User user) {
-        Post post = findPostById(id);
-        checkOwnership(post, user);
-        postService.delete(post);
+        checkOwnership(id, user);
+        postService.delete(findPostById(id));
         return deleteResponse();
     }
 
@@ -70,7 +67,8 @@ public class PostController {
         return postService.findById(id).orElseThrow(() -> notFound("error.posts.not.found"));
     }
 
-    protected void checkOwnership(Post post, User user) {
-        if (!post.getUserId().equals(user.getId())) throw forbidden("error.posts.forbidden");
+    protected void checkOwnership(UUID postId, User user) {
+        if (postService.findByIdAndUserId(postId, user.getId()).isEmpty())
+            throw forbidden("error.posts.forbidden");
     }
 }

@@ -7,6 +7,7 @@ import io.jsonwebtoken.JwtParser;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import jakarta.annotation.PostConstruct;
+import jakarta.security.auth.message.AuthException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -39,10 +40,10 @@ public class JwtTokenProvider {
         return jwtParser.parseClaimsJws(token).getBody();
     }
 
-    public boolean validateToken(String token) {
-        String emailFromToken = extractUsername(token);
-        String emailFromUser = extractUser(token).getEmail();
-        return emailFromToken.equals(emailFromUser);
+    public boolean validateToken(String token) throws AuthException {
+        User user = extractUser(token);
+        if (user == null) throw new AuthException("user.email.not.found");
+        return user.getEmail().equals(extractUsername(token));
     }
 
     public User extractUser(String token) {
