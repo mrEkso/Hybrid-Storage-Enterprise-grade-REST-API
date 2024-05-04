@@ -14,13 +14,15 @@ import java.util.UUID;
 public interface PostService extends modelMappable<Post, PostDto> {
     Optional<Post> findById(UUID id);
 
+    Optional<Post> findByIdAndUserId(UUID id, UUID UserId);
+
     Page<Post> findByUser(User user, int page);
 
     Page<Post> findAll(String searchText, int page);
 
     Post insert(Post post, User user);
 
-    Post update(Post post);
+    Post update(Post post, User user);
 
     void delete(Post post);
 }

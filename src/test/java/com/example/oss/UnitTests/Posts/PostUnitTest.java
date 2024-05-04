@@ -104,11 +104,11 @@ class PostUnitTest {
     }
 
     @Test
-    void updatePost_WhenPostDoesNotExist_ShouldReturnNotFound() throws Exception {
+    void updatePost_WhenPostDoesNotExist_ShouldReturnForbidden() throws Exception {
         Post testPost = createTestDBPost();
         given(postService.findById(testPost.getId())).willReturn(Optional.empty());
         mockMvc.perform(updatePost(testPost))
-                .andExpect(status().isNotFound());
+                .andExpect(status().isForbidden());
     }
 
     @Test

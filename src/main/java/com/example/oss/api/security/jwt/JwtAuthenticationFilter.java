@@ -1,6 +1,7 @@
 package com.example.oss.api.security.jwt;
 
 import com.example.oss.api.models.User;
+import jakarta.security.auth.message.AuthException;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -25,9 +26,14 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             throws ServletException, IOException {
         String jwt = getJwtFromRequest(request);
 
-        if (jwt != null && jwtTokenProvider.validateToken(jwt)) {
-            Authentication authentication = getAuthentication(jwt);
-            SecurityContextHolder.getContext().setAuthentication(authentication);
+        try {
+            if (jwt != null && jwtTokenProvider.validateToken(jwt)) {
+                Authentication authentication = getAuthentication(jwt);
+                SecurityContextHolder.getContext().setAuthentication(authentication);
+            }
+        } catch (AuthException e) {
+            response.sendError(HttpServletResponse.SC_UNAUTHORIZED, e.getMessage());
+            return;
         }
         chain.doFilter(request, response);
     }

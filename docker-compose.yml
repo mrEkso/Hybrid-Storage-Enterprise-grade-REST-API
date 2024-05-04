@@ -1,5 +1,21 @@
-version: "3.1"
 services:
+  ### mysql ###################################################
+  mysql:
+    image: mysql
+    container_name: ${DOCKER_PROJECT_NAME}-mysql
+    environment:
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - ${DB_MYSQL_DOCKER_PORT}:${DB_MYSQL_PORT}
+    healthcheck:
+      test: [ "CMD-SHELL", "mysqladmin ping -h localhost -u root -p1234" ]
+      timeout: 20s
+      retries: 10
+    networks:
+      - localnet
   ### mongodb ####################################################
   mongodb:
     image: mongo
@@ -9,7 +25,7 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=${DB_PASSWORD}
       - MONGO_INITDB_DATABASE=${DB_DATABASE}
     ports:
-      - ${DB_DOCKER_PORT}:${DB_PORT}
+      - ${DB_MONGO_DOCKER_PORT}:${DB_MONGO_PORT}
     networks:
       - localnet
   ### spring ###################################################
@@ -20,10 +36,19 @@ services:
       dockerfile: .docker/Dockerfile
     ports:
       - ${SPRING_DOCKER_PORT}:${SPRING_PORT}
+    volumes:
+      - ./src/main:/app/src/main
     depends_on:
+      - mysql
       - mongodb
     environment:
-      DB_URL: ${DB_URL}
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_MYSQL_URL: ${DB_MYSQL_URL}
+      DB_MONGO_URL: ${DB_MONGO_URL}
+      AZURE_ACCOUNT_NAME: ${AZURE_ACCOUNT_NAME}
+      AZURE_BLOB_CONTAINER_NAME: ${AZURE_BLOB_CONTAINER_NAME}
+      AZURE_ACCOUNT_KEY: ${AZURE_ACCOUNT_KEY}
     networks:
       - localnet
 networks:

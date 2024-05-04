@@ -1,16 +1,14 @@
 package com.example.oss.api.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.mongodb.core.index.Indexed;
-import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -19,21 +17,27 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.UUID;
 
-@Document(collection = "users")
-@Data
+
+@Entity
+@Getter
 @NoArgsConstructor
+@Table(name = "users", uniqueConstraints = {
+        @UniqueConstraint(columnNames = {
+                "email"
+        })
+})
 public class User implements UserDetails {
     @Id
-    private UUID id = UUID.randomUUID();
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
 
     @NotBlank(message = "Адрес електронної пошти не може бути пустим")
     @Size(min = 4, max = 100)
     @Email
-    @Indexed(unique = true)
     private String email;
 
     @NotBlank(message = "Пароль не може бути пустим")
-    @Size(min = 6, max = 30)
+    @Size(min = 6, max = 64)
     @Setter
     private String password;
 
