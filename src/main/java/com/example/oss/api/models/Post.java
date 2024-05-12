@@ -38,6 +38,13 @@ public class Post {
     @Setter
     private boolean open;
 
+    public Post(UUID id, UUID userId, String title, String subtitle) {
+        this.id = id;
+        this.userId = userId;
+        this.title = title;
+        this.subtitle = subtitle;
+    }
+
     public Post(UUID userId, String title, String subtitle) {
         this.userId = userId;
         this.title = title;

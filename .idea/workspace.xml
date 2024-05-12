@@ -1,52 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ee0800b-f4c6-4865-afc5-45e0e5f86718" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Blob/BlobStorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Blob/BlobStorageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/api/services/Blob/FakeBlobStorageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/01e3e3dd-6693-4b4b-ae17-7115a3e46da5_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/0a89adc2-aa44-459a-a321-969d414690cd_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/1292caf5-c793-426e-90cb-dad2b655671e_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/2a0d1452-c6c0-46cf-bc04-7719b9f643f8_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/39571f1b-19a0-4186-9436-8c18591511aa_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/773322cd-a598-45b7-bf3d-46be4fd99235_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/84acabfd-3011-464b-87b8-ad156950b228_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/85680c64-5ec2-4912-8f76-05b490e6f6c6_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/8cc71639-b491-4315-b1f7-f201915df546_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/91137681-ab59-4f05-ae9c-307cd8bdfa9d_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/a81d5af5-812f-4c8c-ab07-767f411fba8a_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/c283dcba-8ed5-4d93-9bcf-aa54c3ddf751_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/cc0ea86b-763a-4407-9744-88d0c223bd64_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/ea8b9e26-971d-4143-b3b8-f252cb67998b_null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-storage/ef23d23c-9b99-4a96-bc39-401cb7540536_null" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/controllers/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/dto/PostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/dto/PostDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/security/jwt/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/security/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/security/jwt/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Post/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Post/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Post/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oss/api/services/Post/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_uk.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_uk.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/oss/IntegrationTests/Autorization/AuthorizationIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/IntegrationTests/Autorization/AuthorizationIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/oss/UnitTests/Posts/PostUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/oss/UnitTests/Posts/PostUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/phase2" />
+        <entry key="$PROJECT_DIR$" value="feature/phase4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,6 +47,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/phase4" />
+                    <option name="lastUsedInstant" value="1715352522" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature/phase3" />
                     <option name="lastUsedInstant" value="1714663589" />
@@ -130,8 +94,22 @@
       </map>
     </option>
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -148,39 +126,56 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "JUnit.All in Phase1 (1).executor": "Run",
     "JUnit.All in Phase1 (2).executor": "Run",
     "JUnit.All in Phase1 (3).executor": "Run",
     "JUnit.All in Phase1.executor": "Run",
     "JUnit.AuthorizationIntegrationTest.executor": "Run",
     "JUnit.AuthorizationIntegrationTest.register_WhenUserExists_ShouldReturnUnauthorized.executor": "Debug",
     "JUnit.PostIntegrationTest.executor": "Run",
+    "JUnit.PostIntegrationTest.storePost_ShouldReturnCreated.executor": "Run",
+    "JUnit.PostIntegrationTest.storePost_ShouldReturnCreated_AndSendCorrectPostEvent.executor": "Run",
+    "JUnit.PostUnitTest.storePost_WhenPostDoesNotExists_ShouldReturnOk.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "feature/phase3",
+    "git-widget-placeholder": "Rebasing feature/phase4",
+    "ignore.preview.features.used": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/baron/IdeaProjects/ia13-okayanchenko-dav/src/test",
+    "last_opened_file_path": "C:/Users/baron/IdeaProjects/ia13-okayanchenko-dav",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.build.tools.auto.reload": "ALL",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\baron\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="c2c8a31e-1375-42c5-8699-ebdad821c46e" reportId="ia13-okayanchenko-dav/qodana/2024-05-10" />
+    </option>
+  </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\baron\IdeaProjects\ia13-okayanchenko-dav" />
+      <recent name="C:\Users\baron\IdeaProjects\ia13-okayanchenko-dav\src\main\java\com\example\oss\api\services\PostEvent" />
       <recent name="C:\Users\baron\IdeaProjects\ia13-okayanchenko-dav\src\test" />
       <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\Phase1\src\test\resources" />
       <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\Phase1\src\main\java\com\example\phase1\api" />
-      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\Phase1\src\main\resources" />
-      <recent name="C:\Users\Main\IdeaProjects\data-in-cloud\Phase1\src\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Main\IdeaProjects\data-in-cloud" />
@@ -190,23 +185,15 @@
       <recent name="com.example.phase1" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.oss.api.controllers" />
       <recent name="com.example.oss.api.services.Blob" />
       <recent name="com.example.oss.api.models" />
       <recent name="com.example.phase1.IntegrationTests" />
       <recent name="com.example.phase1.UnitTests" />
-      <recent name="com.example.phase1" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in Phase1">
     <configuration name="All in Phase1 (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Phase1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in Phase1 (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Phase1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -222,22 +209,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthorizationIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Phase1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.oss.IntegrationTests.Autorization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.oss.IntegrationTests.Autorization" />
-      <option name="MAIN_CLASS_NAME" value="com.example.oss.IntegrationTests.Autorization.AuthorizationIntegrationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PostIntegrationTest.storePost_ShouldReturnCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Phase1" />
       <extension name="coverage">
         <pattern>
@@ -247,15 +219,68 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.oss.IntegrationTests.Posts" />
       <option name="MAIN_CLASS_NAME" value="com.example.oss.IntegrationTests.Posts.PostIntegrationTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="storePost_ShouldReturnCreated" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="PostIntegrationTest.storePost_ShouldReturnCreated_AndSendCorrectPostEvent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Phase1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.oss.IntegrationTests.Posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.oss.IntegrationTests.Posts" />
+      <option name="MAIN_CLASS_NAME" value="com.example.oss.IntegrationTests.Posts.PostIntegrationTest" />
+      <option name="METHOD_NAME" value="storePost_ShouldReturnCreated_AndSendCorrectPostEvent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostUnitTest.storePost_WhenPostDoesNotExists_ShouldReturnOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Phase1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.oss.UnitTests.Posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.oss.UnitTests.Posts" />
+      <option name="MAIN_CLASS_NAME" value="com.example.oss.UnitTests.Posts.PostUnitTest" />
+      <option name="METHOD_NAME" value="storePost_WhenPostDoesNotExists_ShouldReturnOk" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
+      <module name="Phase1" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8080" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="Phase1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.oss.Application" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -281,21 +306,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in Phase1 (3)" />
-      <item itemvalue="JUnit.AuthorizationIntegrationTest" />
-      <item itemvalue="JUnit.PostIntegrationTest" />
       <item itemvalue="JUnit.All in Phase1 (2)" />
+      <item itemvalue="JUnit.PostIntegrationTest.storePost_ShouldReturnCreated_AndSendCorrectPostEvent" />
+      <item itemvalue="JUnit.PostUnitTest.storePost_WhenPostDoesNotExists_ShouldReturnOk" />
+      <item itemvalue="JUnit.PostIntegrationTest.storePost_ShouldReturnCreated" />
       <item itemvalue="JUnit.All in Phase1" />
+      <item itemvalue="Remote JVM Debug.Unnamed" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Spring Boot.Phase1Application" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Phase1" />
-        <item itemvalue="JUnit.PostIntegrationTest" />
-        <item itemvalue="JUnit.AuthorizationIntegrationTest" />
-        <item itemvalue="JUnit.All in Phase1 (3)" />
+        <item itemvalue="JUnit.PostUnitTest.storePost_WhenPostDoesNotExists_ShouldReturnOk" />
         <item itemvalue="JUnit.All in Phase1 (2)" />
+        <item itemvalue="JUnit.PostIntegrationTest.storePost_ShouldReturnCreated_AndSendCorrectPostEvent" />
+        <item itemvalue="JUnit.PostIntegrationTest.storePost_ShouldReturnCreated" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +346,16 @@
       <workItem from="1714683462061" duration="76000" />
       <workItem from="1714683558070" duration="10361000" />
       <workItem from="1714747422850" duration="9478000" />
-      <workItem from="1714812706607" duration="3051000" />
+      <workItem from="1714812706607" duration="3512000" />
+      <workItem from="1715026745981" duration="41000" />
+      <workItem from="1715339357604" duration="604000" />
+      <workItem from="1715352254435" duration="7712000" />
+      <workItem from="1715371313151" duration="4476000" />
+      <workItem from="1715375888351" duration="3760000" />
+      <workItem from="1715379965018" duration="4866000" />
+      <workItem from="1715418743960" duration="105000" />
+      <workItem from="1715418862885" duration="18310000" />
+      <workItem from="1715548070317" duration="1561000" />
     </task>
     <servers />
   </component>
@@ -367,6 +402,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/example/oss/IntegrationTests/Autorization/AuthorizationIntegrationTestUtils.java</url>
           <line>31</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/oss/UnitTests/Posts/PostUnitTest.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -10,6 +10,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.ResultMatcher;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.user;
@@ -63,6 +64,11 @@ public class PostIntegrationTestUtils {
 
     public User createTestUser() {
         return new User("test@test.com", "testuser");
+    }
+
+    public User createTestDBUser() {
+        return new User(UUID.randomUUID(), "test@test.com", "testuser",
+                "token", LocalDate.now());
     }
 
     public Post createTestPost() {

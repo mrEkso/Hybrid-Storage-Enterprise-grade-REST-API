@@ -37,18 +37,24 @@ services:
     ports:
       - ${SPRING_DOCKER_PORT}:${SPRING_PORT}
     volumes:
-      - ./src/main:/app/src/main
+      - ./src:/app/src
+      - ~/.m2:/root/.m2
     depends_on:
       - mysql
       - mongodb
     environment:
+      # DB #
       DB_USERNAME: ${DB_USERNAME}
       DB_PASSWORD: ${DB_PASSWORD}
       DB_MYSQL_URL: ${DB_MYSQL_URL}
       DB_MONGO_URL: ${DB_MONGO_URL}
+      # AZURE #
       AZURE_ACCOUNT_NAME: ${AZURE_ACCOUNT_NAME}
       AZURE_BLOB_CONTAINER_NAME: ${AZURE_BLOB_CONTAINER_NAME}
       AZURE_ACCOUNT_KEY: ${AZURE_ACCOUNT_KEY}
+      AZURE_EVENT_HUB_NAME: ${AZURE_EVENT_HUB_NAME}
+      AZURE_EVENT_HUB_CONNECTION_STRING: ${AZURE_EVENT_HUB_CONNECTION_STRING}
+      AZURE_EVENT_HUB_CONTAINER_CONNECTION_STRING: ${AZURE_EVENT_HUB_CONTAINER_CONNECTION_STRING}
     networks:
       - localnet
 networks:
