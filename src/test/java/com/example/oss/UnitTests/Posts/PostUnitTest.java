@@ -3,9 +3,11 @@ package com.example.oss.UnitTests.Posts;
 import com.example.oss.api.controllers.PostController;
 import com.example.oss.api.exceptions.handlers.AuthExceptionHandler;
 import com.example.oss.api.lang.LocalizationService;
+import com.example.oss.api.messaging.Post.PostEventPublisher;
 import com.example.oss.api.models.Post;
 import com.example.oss.api.models.User;
 import com.example.oss.api.services.Post.PostService;
+import com.example.oss.api.services.PostEvent.PostEventService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -36,13 +38,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class PostUnitTest {
     private MockMvc mockMvc;
     private final PostService postService = Mockito.mock(PostService.class);
+    private final PostEventService postEventService = Mockito.mock(PostEventService.class);
+    private final PostEventPublisher postEventPublisher = Mockito.mock(PostEventPublisher.class);
+
 
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
         configureLocale();
         mockMvc = MockMvcBuilders
-                .standaloneSetup(new PostController(postService))
+                .standaloneSetup(new PostController(postService, postEventPublisher))
                 .setControllerAdvice(new AuthExceptionHandler())
                 .setCustomArgumentResolvers(new HandlerMethodArgumentResolver() {
                     @Override
@@ -88,10 +93,10 @@ class PostUnitTest {
 
     @Test
     void storePost_WhenPostDoesNotExists_ShouldReturnOk() throws Exception {
-        Post testPost = createTestPost();
-        User testUser = createTestUser();
+        Post testPost = createTestDBPost();
+        User testUser = createTestDBUser();
         testPost.setUserId(testUser.getId());
-        given(postService.insert(testPost, testUser)).willReturn(testPost);
+        given(postService.insert(any(Post.class), any(User.class))).willReturn(testPost);
         mockMvc.perform(storePost(testPost)).andExpect(status().isCreated());
     }
 

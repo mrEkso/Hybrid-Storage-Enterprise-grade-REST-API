@@ -5,6 +5,8 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 
+import java.util.UUID;
+
 import static com.example.oss.UnitTests.Autorization.AuthorizationUnitTestUtils.createTestDBUser;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 
@@ -42,6 +44,6 @@ public class PostUnitTestUtils {
     }
 
     public static Post createTestDBPost() {
-        return new Post(createTestDBUser().getId(), "Test title", "Test subtitle");
+        return new Post(UUID.randomUUID(), createTestDBUser().getId(), "Test title", "Test subtitle");
     }
 }

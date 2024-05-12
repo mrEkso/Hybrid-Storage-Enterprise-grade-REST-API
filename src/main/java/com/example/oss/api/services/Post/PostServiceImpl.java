@@ -18,11 +18,11 @@ import java.util.UUID;
 @Service
 @RequiredArgsConstructor
 public class PostServiceImpl implements PostService {
-    private final int PAGE_SIZE = 3;
-
     private final FactoryRepository fr;
     private final BlobStorageService blobStorageService;
     private final ModelMapper modelMapper;
+
+    private final int PAGE_SIZE = 3;
 
     @Override
     public Optional<Post> findById(UUID id) {

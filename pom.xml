@@ -5,14 +5,15 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.2</version>
+        <version>3.2.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>Phase1</artifactId>
+    <artifactId>DataInCloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Phase1</name>
-    <description>Phase1</description>
+    <name>DataInCloud</name>
+    <description>DataInCloud</description>
+    <packaging>jar</packaging>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -25,10 +26,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
         <dependency>
@@ -120,6 +121,11 @@
             <artifactId>spring-aspects</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-stream</artifactId>
+            <version>4.1.1</version>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
@@ -130,6 +136,11 @@
             <version>12.26.0-beta.1</version>
         </dependency>
         <dependency>
+            <groupId>com.azure.spring</groupId>
+            <artifactId>spring-cloud-azure-stream-binder-eventhubs</artifactId>
+            <version>6.0.0-beta.4</version>
+        </dependency>
+        <dependency>
             <groupId>com.azure</groupId>
             <artifactId>azure-identity</artifactId>
             <version>1.12.0</version>
@@ -138,6 +149,10 @@
             <groupId>com.azure</groupId>
             <artifactId>azure-core</artifactId>
             <version>1.49.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
         </dependency>
     </dependencies>
 

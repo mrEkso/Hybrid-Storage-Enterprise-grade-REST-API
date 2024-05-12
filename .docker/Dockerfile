@@ -7,21 +7,11 @@ WORKDIR /app
 # Copy the pom.xml and any other necessary configuration files
 COPY ./pom.xml .
 
-COPY src src
+# Copy the source code
+COPY src ./src
 
-# Build the application
-RUN mvn clean package -DskipTests
+# Instead of building the jar, we just ensure that dependencies are downloaded
+RUN mvn dependency:go-offline
 
-# Run the app in a minimal java container
-
-# Create a new image for running the application
-FROM openjdk:22-slim
-
-# Set the working directory
-WORKDIR /app
-
-# Copy the built JAR file from the previous stage
-COPY --from=build /app/target/*.jar app.jar
-
-# Command to run the application
-CMD ["java", "-jar", "app.jar"]
+# Command to run the application using Maven, enabling hot reloading with DevTools
+CMD ["mvn", "spring-boot:run"]

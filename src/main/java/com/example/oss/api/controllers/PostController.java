@@ -1,7 +1,9 @@
 package com.example.oss.api.controllers;
 
 import com.example.oss.api.dto.PostDto;
+import com.example.oss.api.messaging.Post.PostEventPublisher;
 import com.example.oss.api.models.Post;
+import com.example.oss.api.models.PostEvent;
 import com.example.oss.api.models.User;
 import com.example.oss.api.services.Post.PostService;
 import jakarta.validation.Valid;
@@ -22,6 +24,7 @@ import static com.example.oss.api.responses.factory.CrudResponseEntityFactory.*;
 @RequiredArgsConstructor
 public class PostController {
     final private PostService postService;
+    final private PostEventPublisher postEventPublisher;
 
     @GetMapping({"", "/search"})
     @ResponseBody
@@ -31,14 +34,16 @@ public class PostController {
     }
 
     @GetMapping("/{id}")
-    protected PostDto show(@PathVariable UUID id) {
-        return postService.convertToDto(findPostById(id));
+    protected Post show(@PathVariable UUID id) {
+        return findPostById(id);
     }
 
     @PostMapping
     public ResponseEntity<?> store(@Valid @RequestBody Post post,
                                    @AuthenticationPrincipal User user) {
-        return createResponse(postService.convertToDto(postService.insert(post, user)));
+        Post savedPost = postService.insert(post, user);
+        postEventPublisher.publish(new PostEvent(savedPost.getId(), user.getId()));
+        return createResponse(savedPost);
     }
 
     @PutMapping("/{id}")
@@ -46,7 +51,7 @@ public class PostController {
                                        @Valid @RequestBody Post post,
                                        @AuthenticationPrincipal User user) {
         checkOwnership(id, user);
-        return updateResponse(postService.convertToDto(postService.update(post, user)));
+        return updateResponse(postService.update(post, user));
     }
 
     @DeleteMapping("/{id}")

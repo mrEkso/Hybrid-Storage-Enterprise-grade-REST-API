@@ -10,6 +10,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDate;
@@ -48,6 +49,10 @@ public class User implements UserDetails {
     @Past(message = "День народження повинен бути в минулому")
     private LocalDate birthdate;
 
+    public static final int ROLE_ADMIN = 1;
+    public static final int ROLE_USER = 2;
+    private int role = ROLE_USER;
+
     public User(UUID id, String email, String password, String token, LocalDate birthdate) {
         this.id = id;
         this.email = email;
@@ -75,11 +80,13 @@ public class User implements UserDetails {
     }
 
     @Override
+    @JsonIgnore
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.emptyList();
+        return Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + (role == ROLE_ADMIN ? "ADMIN" : "USER")));
     }
 
     @Override
+    @JsonIgnore
     public String getUsername() {
         return this.getEmail();
     }
@@ -100,6 +107,7 @@ public class User implements UserDetails {
     }
 
     @Override
+    @JsonIgnore
     public boolean isEnabled() {
         return true;
     }

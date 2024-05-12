@@ -13,7 +13,6 @@ import java.util.UUID;
 @NoArgsConstructor
 public class PostDto {
     private UUID id;
-    private UUID userId;
     private String title;
     private String subtitle;
     private Instant updatedAt;
