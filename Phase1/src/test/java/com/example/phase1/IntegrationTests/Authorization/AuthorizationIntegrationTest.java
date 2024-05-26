@@ -1,4 +1,4 @@
-package com.example.phase1.IntegrationTests;
+package com.example.phase1.IntegrationTests.Authorization;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.transaction.annotation.Transactional;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -19,20 +19,20 @@ class AuthorizationIntegrationTest {
     @Test
     @Transactional
     public void register_WhenUserDoesNotExist_ShouldReturnOk() throws Exception {
-        utils.registerUser(utils.createTestUser(), status().isOk());
+        utils.registerUser(utils.createTestUser(), status().isCreated());
     }
 
     @Test
     @Transactional
     public void register_WhenUserExists_ShouldReturnUnauthorized() throws Exception {
-        utils.registerUser(utils.createTestUser(), status().isOk());
+        utils.registerUser(utils.createTestUser(), status().isCreated());
         utils.registerUser(utils.createTestUser(), status().isUnauthorized());
     }
 
     @Test
     @Transactional
     public void login_WhenUserExists_ShouldReturnOk() throws Exception {
-        utils.registerUser(utils.createTestUser(), status().isOk());
+        utils.registerUser(utils.createTestUser(), status().isCreated());
         utils.loginUser(utils.createTestUser(), status().isOk());
     }
 

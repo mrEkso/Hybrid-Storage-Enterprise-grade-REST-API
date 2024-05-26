@@ -9,6 +9,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.SoftDelete;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -22,9 +23,10 @@ import java.util.UUID;
 @Entity
 @Getter
 @NoArgsConstructor
+@SoftDelete
 @Table(name = "users", uniqueConstraints = {
         @UniqueConstraint(columnNames = {
-                "email"
+                "email", "deleted"
         })
 })
 public class User implements UserDetails {
@@ -73,6 +75,12 @@ public class User implements UserDetails {
         this.email = email;
         this.password = password;
         this.birthdate = birthdate;
+    }
+
+    public User(String email, String password, int role) {
+        this.email = email;
+        this.password = password;
+        this.role = role;
     }
 
     public User(String email, String password) {

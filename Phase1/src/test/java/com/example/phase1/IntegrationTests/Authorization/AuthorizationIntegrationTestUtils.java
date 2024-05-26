@@ -1,4 +1,4 @@
-package com.example.phase1.IntegrationTests;
+package com.example.phase1.IntegrationTests.Authorization;
 
 import com.example.phase1.api.models.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -52,12 +52,12 @@ public class AuthorizationIntegrationTestUtils {
     }
 
     public String getTokenFromAuthorization(User user) throws Exception {
-        return JsonPath.parse(registerUser(user, status().isOk())
+        return JsonPath.parse(registerUser(user, status().isCreated())
                         .getResponse().getContentAsString())
                 .read("$.token");
     }
 
     public User createTestUser() {
-        return new User("test@test.com", "test");
+        return new User("test@test.com", "testtest");
     }
 }
