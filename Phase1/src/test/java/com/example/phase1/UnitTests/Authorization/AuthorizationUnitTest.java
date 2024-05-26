@@ -1,4 +1,4 @@
-package com.example.phase1.UnitTests;
+package com.example.phase1.UnitTests.Authorization;
 
 import com.example.phase1.api.controllers.AuthorizationController;
 import com.example.phase1.api.exceptions.handlers.AuthExceptionHandler;
@@ -11,7 +11,7 @@ import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import static com.example.phase1.UnitTests.AuthorizationUnitTestUtils.*;
+import static com.example.phase1.UnitTests.Authorization.AuthorizationUnitTestUtils.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -39,13 +39,13 @@ class AuthorizationUnitTest {
     @Test
     void register_WhenUserDoesNotExist_ShouldReturnOk() throws Exception {
         given(userService.save(any())).willReturn(createTestDBUser());
-        mockMvc.perform(registerUser(createTestUser())).andExpect(status().isOk());
+        mockMvc.perform(registerUser(createTestUser())).andExpect(status().isCreated());
     }
 
     @Test
     void register_WhenUserExists_ShouldReturnUnauthorized() throws Exception {
         given(userService.save(any())).willReturn(createTestDBUser());
-        mockMvc.perform(registerUser(createTestUser())).andExpect(status().isOk());
+        mockMvc.perform(registerUser(createTestUser())).andExpect(status().isCreated());
 
         given(userService.loadUserByUsername(any())).willReturn(createTestDBUser());
         mockMvc.perform(registerUser(createTestUser())).andExpect(status().isUnauthorized());

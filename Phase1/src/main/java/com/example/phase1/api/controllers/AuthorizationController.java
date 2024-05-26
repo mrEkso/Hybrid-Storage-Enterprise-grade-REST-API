@@ -1,14 +1,14 @@
 package com.example.phase1.api.controllers;
 
 import com.example.phase1.api.models.User;
-import com.example.phase1.api.responses.auth.LoginResponse;
-import com.example.phase1.api.responses.auth.LogoutResponse;
-import com.example.phase1.api.responses.auth.RegisterResponse;
 import com.example.phase1.api.services.User.UserService;
 import jakarta.security.auth.message.AuthException;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import static com.example.phase1.api.responses.factory.AuthResponseEntityFactory.*;
 
 
 @RestController
@@ -23,11 +23,11 @@ public class AuthorizationController {
 
     @PostMapping("/register")
     @ResponseBody
-    protected RegisterResponse register(@Valid @RequestBody User user) throws AuthException {
+    protected ResponseEntity<?> register(@Valid @RequestBody User user) throws AuthException {
         if (userService.loadUserByUsername(user.getEmail()) != null)
             throw new AuthException("error.register.email.exists");
         User dbUser = userService.save(user);
-        return new RegisterResponse(
+        return registerResponse(
                 userService.convertToDto(dbUser),
                 dbUser.getToken()
         );
@@ -35,13 +35,12 @@ public class AuthorizationController {
 
     @PostMapping("/login")
     @ResponseBody
-    public LoginResponse login(@Valid @RequestBody User user) throws AuthException {
+    public ResponseEntity<?> login(@Valid @RequestBody User user) throws AuthException {
         User dbUser = userService.loadUserByUsername(user.getEmail());
 
         if (dbUser == null || userService.checkPassword(dbUser, user.getPassword()))
             throw new AuthException("error.login.failed");
-
-        return new LoginResponse(
+        return loginResponse(
                 userService.convertToDto(dbUser),
                 dbUser.getToken()
         );
@@ -49,7 +48,7 @@ public class AuthorizationController {
 
     @GetMapping("/logout")
     @ResponseBody
-    protected LogoutResponse logout() {
-        return new LogoutResponse();
+    protected ResponseEntity<?> logout() {
+        return logoutResponse();
     }
 }

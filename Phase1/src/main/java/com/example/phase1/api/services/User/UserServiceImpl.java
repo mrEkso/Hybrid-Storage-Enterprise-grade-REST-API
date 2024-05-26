@@ -7,23 +7,27 @@ import com.example.phase1.api.security.jwt.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor(onConstructor_ = @Lazy)
 public class UserServiceImpl implements UserService {
+    private final int PAGE_SIZE = 3;
+
     private final UserRepository userRepository;
     private final JwtTokenProvider jwtTokenProvider;
     private final ModelMapper modelMapper;
 
-    public List<User> findAll() {
-        return userRepository.findAll();
+    public Page<User> findAll(int page, int size) {
+        if (size > 0) return userRepository.findAll(PageRequest.of(page, size));
+        return userRepository.findAll(PageRequest.of(page, PAGE_SIZE));
     }
 
     public User findById(UUID userId) {
@@ -38,7 +42,7 @@ public class UserServiceImpl implements UserService {
 
     public User update(UUID userId, User user) {
         user.setId(userId);
-        return userRepository.save(user);
+        return save(user);
     }
 
     public void delete(UUID userId) {

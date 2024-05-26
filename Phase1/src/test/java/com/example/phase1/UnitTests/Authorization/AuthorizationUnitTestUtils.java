@@ -1,15 +1,8 @@
-package com.example.phase1.UnitTests;
+package com.example.phase1.UnitTests.Authorization;
 
-import com.example.phase1.api.controllers.AuthorizationController;
-import com.example.phase1.api.exceptions.handlers.AuthExceptionHandler;
 import com.example.phase1.api.models.User;
-import com.example.phase1.api.services.User.UserService;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.time.LocalDate;
 import java.util.UUID;
@@ -30,11 +23,11 @@ public class AuthorizationUnitTestUtils {
     }
 
     public static User createTestUser() {
-        return new User("test@test.com", "test");
+        return new User("test@test.com", "testtest");
     }
 
     public static User createTestDBUser() {
-        return new User(UUID.randomUUID(), "test@test.com", "test",
+        return new User(UUID.randomUUID(), "test@test.com", "testtest",
                 "token", LocalDate.now());
     }
 }
