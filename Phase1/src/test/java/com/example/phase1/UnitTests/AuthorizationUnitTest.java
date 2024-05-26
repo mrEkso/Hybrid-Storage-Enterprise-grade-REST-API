@@ -38,13 +38,13 @@ class AuthorizationUnitTest {
 
     @Test
     void register_WhenUserDoesNotExist_ShouldReturnOk() throws Exception {
-        given(userService.register(any())).willReturn(createTestDBUser());
+        given(userService.save(any())).willReturn(createTestDBUser());
         mockMvc.perform(registerUser(createTestUser())).andExpect(status().isOk());
     }
 
     @Test
     void register_WhenUserExists_ShouldReturnUnauthorized() throws Exception {
-        given(userService.register(any())).willReturn(createTestDBUser());
+        given(userService.save(any())).willReturn(createTestDBUser());
         mockMvc.perform(registerUser(createTestUser())).andExpect(status().isOk());
 
         given(userService.loadUserByUsername(any())).willReturn(createTestDBUser());

@@ -13,7 +13,7 @@ services:
       - ${DOCKER_MYSQL_PORT}:${DB_PORT}
     healthcheck:
       test: [ "CMD-SHELL", "mysqladmin ping -h localhost -u root -p1234" ]
-      timeout: 20s
+      timeout: 5s
       retries: 10
     networks:
       - localnet
