@@ -26,7 +26,7 @@ public class AuthorizationController {
     protected RegisterResponse register(@Valid @RequestBody User user) throws AuthException {
         if (userService.loadUserByUsername(user.getEmail()) != null)
             throw new AuthException("error.register.email.exists");
-        User dbUser = userService.register(user);
+        User dbUser = userService.save(user);
         return new RegisterResponse(
                 userService.convertToDto(dbUser),
                 dbUser.getToken()

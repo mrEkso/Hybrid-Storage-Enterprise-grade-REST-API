@@ -10,6 +10,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDate;
@@ -29,6 +30,7 @@ import java.util.UUID;
 public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    @Setter
     private UUID id;
 
     @NotBlank(message = "Адрес електронної пошти не може бути пустим")
@@ -37,7 +39,7 @@ public class User implements UserDetails {
     private String email;
 
     @NotBlank(message = "Пароль не може бути пустим")
-    @Size(min = 6, max = 30)
+    @Size(min = 6, max = 64)
     @Setter
     private String password;
 
@@ -47,6 +49,10 @@ public class User implements UserDetails {
 
     @Past(message = "День народження повинен бути в минулому")
     private LocalDate birthdate;
+
+    public static final int ROLE_ADMIN = 1;
+    public static final int ROLE_USER = 2;
+    private int role = ROLE_USER;
 
     public User(UUID id, String email, String password, String token, LocalDate birthdate) {
         this.id = id;
@@ -75,8 +81,9 @@ public class User implements UserDetails {
     }
 
     @Override
+    @JsonIgnore
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.emptyList();
+        return Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + (role == ROLE_ADMIN ? "ADMIN" : "USER")));
     }
 
     @Override
