@@ -20,7 +20,7 @@ public class AuthorizationController {
     protected ResponseEntity<?> register(@Valid @RequestBody User user) throws AuthException {
         if (userService.loadUserByUsername(user.getEmail()) != null)
             throw new AuthException("error.register.email.exists");
-        User dbUser = userService.register(user);
+        User dbUser = userService.save(user);
         return registerResponse(userService.convertToDto(dbUser), dbUser.getToken());
     }
 

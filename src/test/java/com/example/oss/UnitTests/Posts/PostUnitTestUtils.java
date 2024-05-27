@@ -7,7 +7,7 @@ import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilde
 
 import java.util.UUID;
 
-import static com.example.oss.UnitTests.Autorization.AuthorizationUnitTestUtils.createTestDBUser;
+import static com.example.oss.UnitTests.Authorization.AuthorizationUnitTestUtils.createTestDBUser;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 
 public class PostUnitTestUtils {

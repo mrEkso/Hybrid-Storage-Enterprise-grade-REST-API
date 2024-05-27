@@ -18,7 +18,6 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.UUID;
 
-
 @Entity
 @Getter
 @NoArgsConstructor
@@ -29,6 +28,7 @@ import java.util.UUID;
 })
 public class User implements UserDetails {
     @Id
+    @Setter
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
@@ -72,6 +72,12 @@ public class User implements UserDetails {
         this.email = email;
         this.password = password;
         this.birthdate = birthdate;
+    }
+
+    public User(String email, String password, int role) {
+        this.email = email;
+        this.password = password;
+        this.role = role;
     }
 
     public User(String email, String password) {
