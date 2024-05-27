@@ -33,6 +33,7 @@ public class SecurityConfiguration {
                         .requestMatchers("/auth/logout").authenticated()
                         .requestMatchers("/auth/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/posts").permitAll()
+                        .requestMatchers("/api/v1/users/**").hasRole("ADMIN")
                         .anyRequest().authenticated())
                 .csrf(AbstractHttpConfigurer::disable)
                 .exceptionHandling((exceptions) -> exceptions

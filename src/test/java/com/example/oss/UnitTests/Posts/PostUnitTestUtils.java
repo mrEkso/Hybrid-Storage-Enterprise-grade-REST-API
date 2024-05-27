@@ -5,7 +5,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 
-import static com.example.oss.UnitTests.Autorization.AuthorizationUnitTestUtils.createTestDBUser;
+import static com.example.oss.UnitTests.Authorization.AuthorizationUnitTestUtils.createTestDBUser;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 
 public class PostUnitTestUtils {

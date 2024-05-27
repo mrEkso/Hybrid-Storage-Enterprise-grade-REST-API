@@ -10,13 +10,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDate;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.UUID;
-
 
 @Entity
 @Getter
@@ -28,6 +28,7 @@ import java.util.UUID;
 })
 public class User implements UserDetails {
     @Id
+    @Setter
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
@@ -47,6 +48,10 @@ public class User implements UserDetails {
 
     @Past(message = "День народження повинен бути в минулому")
     private LocalDate birthdate;
+
+    public static final int ROLE_ADMIN = 1;
+    public static final int ROLE_USER = 2;
+    private int role = ROLE_USER;
 
     public User(UUID id, String email, String password, String token, LocalDate birthdate) {
         this.id = id;
@@ -69,14 +74,21 @@ public class User implements UserDetails {
         this.birthdate = birthdate;
     }
 
+    public User(String email, String password, int role) {
+        this.email = email;
+        this.password = password;
+        this.role = role;
+    }
+
     public User(String email, String password) {
         this.email = email;
         this.password = password;
     }
 
     @Override
+    @JsonIgnore
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.emptyList();
+        return Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + (role == ROLE_ADMIN ? "ADMIN" : "USER")));
     }
 
     @Override

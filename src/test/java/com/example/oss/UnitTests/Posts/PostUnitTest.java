@@ -25,8 +25,8 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 import java.util.Collections;
 import java.util.Optional;
 
-import static com.example.oss.UnitTests.Autorization.AuthorizationUnitTestUtils.createTestDBUser;
-import static com.example.oss.UnitTests.Autorization.AuthorizationUnitTestUtils.createTestUser;
+import static com.example.oss.UnitTests.Authorization.AuthorizationUnitTestUtils.createTestDBUser;
+import static com.example.oss.UnitTests.Authorization.AuthorizationUnitTestUtils.createTestUser;
 import static com.example.oss.UnitTests.Posts.PostUnitTestUtils.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
