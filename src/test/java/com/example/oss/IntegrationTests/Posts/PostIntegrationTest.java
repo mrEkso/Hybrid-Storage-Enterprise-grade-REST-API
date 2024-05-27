@@ -66,7 +66,7 @@ class PostIntegrationTest {
         User testUser = utils.createTestUser();
         Post testPost = utils.createTestPost();
         utils.storePost(testPost, testUser, status().isCreated());
-        utils.deletePost(testPost, testUser, status().isOk());
+        utils.deletePost(testPost, testUser, status().isNoContent());
     }
 
     @Test

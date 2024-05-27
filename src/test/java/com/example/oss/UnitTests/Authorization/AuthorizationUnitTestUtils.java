@@ -1,4 +1,4 @@
-package com.example.oss.UnitTests.Autorization;
+package com.example.oss.UnitTests.Authorization;
 
 import com.example.oss.api.models.User;
 import org.springframework.http.MediaType;
@@ -23,7 +23,7 @@ public class AuthorizationUnitTestUtils {
     }
 
     public static User createTestUser() {
-        return new User("test@test.com", "testuser");
+        return new User("test@test.com", "testtest");
     }
 
     public static User createTestDBUser() {

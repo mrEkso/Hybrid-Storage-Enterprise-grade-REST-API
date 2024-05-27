@@ -1,3 +1,9 @@
+# Build files
+/target
+
+# Idea folders
+/.idea
+
 # Prerequisites
 *.d
 
@@ -47,7 +53,6 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-/libraries
 .idea
 *.iws
 *.iml
