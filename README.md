@@ -9,13 +9,19 @@
 $ git clone https://github.com/data-in-cloud-2024/ia13-okayanchenko-dav.git
 ```
 
-2.Deploying the project
+2.Copying the .env file
+
+```sh
+$ cp .env-test .env
+```
+
+3.Deploying the project
 
 ```sh
 $ docker compose up -d --build
 ```
 
-3.
+4
 ```sh
 done :)
 ```
