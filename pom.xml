@@ -25,7 +25,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -37,8 +36,6 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-<<<<<<< HEAD
-        <!--MySQL-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -48,29 +45,22 @@
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!--MongoDB-->
-=======
->>>>>>> d80d27f064ab7b44030f2defa842ed7a49ebf0f2
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
         <dependency>
-<<<<<<< HEAD
             <groupId>de.flapdoodle.embed</groupId>
             <artifactId>de.flapdoodle.embed.mongo.spring30x</artifactId>
             <version>4.5.2</version>
             <scope>test</scope>
         </dependency>
-        <!--H2-->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-=======
->>>>>>> d80d27f064ab7b44030f2defa842ed7a49ebf0f2
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -122,15 +112,12 @@
             <version>3.1.1</version>
         </dependency>
         <dependency>
-<<<<<<< HEAD
-=======
             <groupId>de.flapdoodle.embed</groupId>
             <artifactId>de.flapdoodle.embed.mongo.spring30x</artifactId>
             <version>4.5.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
->>>>>>> d80d27f064ab7b44030f2defa842ed7a49ebf0f2
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
         </dependency>
@@ -139,7 +126,6 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
-<<<<<<< HEAD
         <dependency>
             <groupId>com.azure</groupId>
             <artifactId>azure-storage-blob</artifactId>
@@ -155,8 +141,6 @@
             <artifactId>azure-core</artifactId>
             <version>1.49.0</version>
         </dependency>
-=======
->>>>>>> d80d27f064ab7b44030f2defa842ed7a49ebf0f2
     </dependencies>
 
     <build>
