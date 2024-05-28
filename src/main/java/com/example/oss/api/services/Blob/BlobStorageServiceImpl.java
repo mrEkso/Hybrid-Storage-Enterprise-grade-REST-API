@@ -12,18 +12,14 @@ import org.springframework.stereotype.Service;
 @Profile("!test")
 public class BlobStorageServiceImpl implements BlobStorageService {
 
-    @Value("${azure.storage.account-name}")
-    private String accountName;
+    @Value("${azure.storage.connection-string}")
+    private String connectionString;
 
     @Value("${azure.storage.container-name}")
     private String containerName;
 
-    @Value("${azure.storage.account-key}")
-    private String accountKey;
 
     private BlobContainerClient getBlobContainerClient() {
-        String connectionString = String.format("DefaultEndpointsProtocol=https;AccountName=%s;AccountKey=%s;EndpointSuffix=core.windows.net",
-                accountName, accountKey);
         return new BlobServiceClientBuilder()
                 .connectionString(connectionString)
                 .buildClient()

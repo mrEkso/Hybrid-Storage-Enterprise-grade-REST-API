@@ -1,4 +1,4 @@
-package com.example.oss.IntegrationTests.Autorization;
+package com.example.oss.IntegrationTests.Authorization;
 
 import com.example.oss.api.models.User;
 import com.fasterxml.jackson.databind.ObjectMapper;

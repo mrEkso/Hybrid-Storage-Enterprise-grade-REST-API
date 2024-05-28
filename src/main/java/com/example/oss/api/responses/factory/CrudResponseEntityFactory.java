@@ -16,6 +16,6 @@ public class CrudResponseEntityFactory {
     }
 
     public static ResponseEntity<?> deleteResponse() {
-        return ResponseEntity.ok(new DeleteResponse());
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(new DeleteResponse());
     }
 }

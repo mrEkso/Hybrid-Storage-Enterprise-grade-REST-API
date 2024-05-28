@@ -7,13 +7,15 @@ import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilde
 
 import java.util.UUID;
 
-import static com.example.oss.UnitTests.Autorization.AuthorizationUnitTestUtils.createTestDBUser;
+import static com.example.oss.UnitTests.Authorization.AuthorizationUnitTestUtils.createTestDBUser;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 
 public class PostUnitTestUtils {
     public static MockHttpServletRequestBuilder getPosts() {
         return get("/posts");
     }
+
+    x
 
     public static MockHttpServletRequestBuilder getPost(Post post) {
         return get("/posts/{id}", post.getId());
