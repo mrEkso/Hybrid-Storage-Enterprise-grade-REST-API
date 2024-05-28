@@ -18,7 +18,6 @@ public class BlobStorageServiceImpl implements BlobStorageService {
     @Value("${azure.storage.container-name}")
     private String containerName;
 
-
     private BlobContainerClient getBlobContainerClient() {
         return new BlobServiceClientBuilder()
                 .connectionString(connectionString)
