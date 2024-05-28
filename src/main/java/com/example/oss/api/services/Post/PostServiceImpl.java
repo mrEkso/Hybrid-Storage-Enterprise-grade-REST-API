@@ -79,6 +79,8 @@ public class PostServiceImpl implements PostService {
     }
 
     private String getBlobNameFromIdAndUserId(UUID id, UUID userId) {
-        return id + "_" + userId;
+        String sanitizedId = id.toString().replaceAll("[^a-zA-Z0-9-]", "");
+        String sanitizedUserId = userId.toString().replaceAll("[^a-zA-Z0-9-]", "");
+        return sanitizedId + "_" + sanitizedUserId;
     }
 }
